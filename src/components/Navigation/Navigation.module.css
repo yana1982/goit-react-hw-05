@@ -1,0 +1,15 @@
+.container {
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(5, 44, 78);
+  font-weight: 600;
+}
+
+.active {
+  color: rgb(57, 19, 110);
+}
+
+.nav {
+}
