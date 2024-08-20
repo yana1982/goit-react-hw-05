@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getMovieReviews } from "../../tmdb-api";
+import css from "./MovieReviews.module.css";
 
 export default function MovieReviews() {
   const { movieId } = useParams();
@@ -18,11 +19,11 @@ export default function MovieReviews() {
     getMoviesReviews();
   }, [movieId]);
   return (
-    <div>
-      <ul>
+    <div className={css.container}>
+      <ul className={css.reviewList}>
         {reviewsMovie.length > 0 ? (
           reviewsMovie.map((rev) => (
-            <li key={rev.id}>
+            <li className={css.reviewListItem} key={rev.id}>
               <h3>{rev.author}</h3>
               <p>{rev.content}</p>
             </li>

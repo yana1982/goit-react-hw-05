@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import { getTrendMovies } from "../../tmdb-api";
-
 import Loader from "../../components/Loader/Loader";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 import MovieList from "../../components/MovieList/MovieList";
-
+import css from "./HomePage.module.css";
 const HomePage = () => {
   const [movies, setMovies] = useState([]);
   const [isLoader, setIsLoader] = useState(false);
@@ -27,9 +26,9 @@ const HomePage = () => {
     fetchTrendMovies();
   }, []);
   return (
-    <div>
+    <div className={css.homePageContainer}>
       {isError && <ErrorMessage />}
-      <h2>Trending movies</h2>
+      <h2 className={css.title}>Trending movies</h2>
       {isLoader && <Loader />}
       <MovieList movies={movies} />
     </div>

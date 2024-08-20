@@ -1,0 +1,17 @@
+.movieDetailsContainer {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+.img {
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.imgContainer {
+  display: flex;
+}
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+}

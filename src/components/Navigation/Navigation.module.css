@@ -1,15 +1,22 @@
-.container {
-}
-
-.link {
-  text-decoration: none;
-  color: rgb(5, 44, 78);
-  font-weight: 600;
-}
-
 .active {
   color: rgb(57, 19, 110);
 }
-
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  background-color: #3c4ca380;
+  box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.5);
+  padding: 15px 0;
+}
+.navContainer {
+  display: flex;
+}
 .nav {
+  display: flex;
+}
+.item {
+  display: flex;
+  gap: 100px;
 }

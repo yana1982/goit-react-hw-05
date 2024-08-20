@@ -1,0 +1,12 @@
+.homePageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+.title {
+  color: rgb(71, 71, 157);
+  text-transform: capitalize;
+  margin-bottom: 14px;
+  text-align: center;
+}
